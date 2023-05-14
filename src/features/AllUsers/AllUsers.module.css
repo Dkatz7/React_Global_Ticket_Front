@@ -1,0 +1,154 @@
+/* Cart container */
+.cart-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+/* Cart title */
+.cart-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Cart items */
+.cart-item {
+  margin-bottom: 20px;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.cart-item img {
+  max-width: 100px;
+  margin-right: 20px;
+}
+
+.cart-item h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.cart-item p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.cart-item input {
+  width: 60px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.cart-item #delete-cart-btn {
+  padding: 5px 10px;
+  background-color: #e40000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cart-item .update-cart-btn {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#delete-cart-btn {
+  background-color: red;
+}
+
+#update-cart-btn:hover {
+  background-color: #0069d9;
+}
+
+/* Cart summary */
+.cart-summary {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-summary p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.cart-summary h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Checkout button */
+.checkout-button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.checkout-button:hover {
+  background-color: #218838;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .cart-container {
+    padding: 10px;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-item img {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .cart-item h2 {
+    font-size: 20px;
+  }
+
+  .cart-item p {
+    font-size: 14px;
+  }
+
+  .cart-item input {
+    width: 50px;
+    margin-right: 5px;
+  }
+
+  .cart-summary {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-summary h2 {
+    font-size: 20px;
+  }
+
+  .checkout-button {
+    padding: 10px 15px;
+  }
+}
